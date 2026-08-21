@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard | Bagaskara Dipowicaksono HP</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <div class="admin-layout">
+    <header class="admin-header glass-panel">
+      <div class="container admin-header-content">
+        <div class="admin-brand">
+          <span class="gradient-text">Admin Dashboard</span>
+        </div>
+        <div class="admin-user-nav">
+          <span class="welcome-text">Welcome, <span id="admin-username">Admin</span></span>
+          <button id="logout-btn" class="btn btn-outline btn-sm">Logout</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="admin-main container">
+      <div class="welcome-banner glass-panel">
+        <h2>Dashboard Overview</h2>
+        <p>Manage your portfolio content, view messages, and track analytics.</p>
+        <a href="/" class="btn btn-primary" style="margin-top: 1rem;">View Live Site</a>
+      </div>
+
+      <div class="admin-grid">
+        <div class="admin-card glass-panel">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Projects</h3>
+          <p class="stat">12 Total</p>
+          <a href="#" class="admin-link">Manage Projects &rarr;</a>
+        </div>
+
+        <div class="admin-card glass-panel">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          </div>
+          <h3>Messages</h3>
+          <p class="stat">5 Unread</p>
+          <a href="#" class="admin-link">View Messages &rarr;</a>
+        </div>
+
+        <div class="admin-card glass-panel">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+          </div>
+          <h3>Analytics</h3>
+          <p class="stat">1.2k Visitors</p>
+          <a href="#" class="admin-link">View Analytics &rarr;</a>
+        </div>
+        
+        <div class="admin-card glass-panel">
+          <div class="card-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <h3>Settings</h3>
+          <p class="stat">Configuration</p>
+          <a href="#" class="admin-link">Edit Profile &rarr;</a>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/admin.js"></script>
+</body>
+</html>
